@@ -1,0 +1,5 @@
+- [x] Update backend AI prompt to generate structured JSON format instead of plain text (`backend/ai.py`)
+- [x] Add JSON validation in the backend response parsing (`backend/ai.py`)
+- [x] Update the React plan renderer to present strengths, missing skills, and interactive question cards (`frontend/src/components/InterviewPlan.js`)
+- [x] Implement inline editing, approval, and rejection of questions in the frontend component (`frontend/src/components/InterviewPlan.js`)
+- [x] Add an "Export Plan" utility (copy to clipboard) on the frontend (`frontend/src/components/InterviewPlan.js`)
