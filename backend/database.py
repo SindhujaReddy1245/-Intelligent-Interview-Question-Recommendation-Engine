@@ -7,7 +7,7 @@ import urllib.parse
 encoded_password = urllib.parse.quote_plus("Sindhuja0509@")
 DATABASE_URL = f"postgresql://postgres:{encoded_password}@db.tcvegfwrfcdiyzwfqxuv.supabase.co:5432/postgres"
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL, pool_pre_ping=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
